@@ -6,3 +6,4 @@ foo.txt
 latest.txt
 new_file
 test111
+fadfasdfasf
