@@ -5,9 +5,5 @@ node {
    // Checkout code from repository
    checkout scm
    sh 'printenv'
-   a = env.WORKSPACE
-   echo "=========="
-   pr_id = a.toString().tokenize( '-' )
-   echo ${pr_id}
-   echo ${pr_id[0]}
+   sh 'path=`pwd` && pr_id=`echo $path | cut -d "-" -f2` && echo $pr_id'
 }
