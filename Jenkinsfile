@@ -7,5 +7,7 @@ node {
    sh 'printenv'
    a = env.WORKSPACE
    echo "=========="
-   echo a
+   pr_id = a.tokenize( '-' )
+   echo ${pr_id}
+   echo ${pr_id[0]}
 }
