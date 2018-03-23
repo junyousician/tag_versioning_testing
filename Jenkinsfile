@@ -5,5 +5,7 @@ node {
    // Checkout code from repository
    checkout scm
    sh 'printenv'
-
+   a = env.WORKSPACE
+   echo "=========="
+   echo a
 }
