@@ -4,5 +4,6 @@ node {
 
    // Checkout code from repository
    checkout scm
+   sh 'printenv'
 
 }
