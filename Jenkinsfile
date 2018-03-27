@@ -6,12 +6,20 @@ pipeline {
     }
     stages {
      stage('stage1') {
-       sh 'printenv'
-       sh 'path=`pwd` && pr_id=`echo $path | cut -d "-" -f2` && echo $pr_id'
+       steps {
+         script {
+           sh 'printenv'
+           sh 'path=`pwd` && pr_id=`echo $path | cut -d "-" -f2` && echo $pr_id'
+         }
+       }
      }
 
      stage('stage2') {
-       echo "set-build-description: bababababbaa"
+       steps {
+         script {
+            echo "set-build-description: bababababbaa"
+          }
+        }
      }
    }
 
