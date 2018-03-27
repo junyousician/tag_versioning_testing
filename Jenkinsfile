@@ -20,17 +20,13 @@ pipeline {
      stage('stage2') {
        steps {
          script {
-            echo "set-build-description: bababababbaa"
-            currentBuild.description = "aaa"
+            sh 'echo bababababbaa > tmp'
+            def port = readFile "tmp"
+            currentBuild.description = "${port}"
           }
         }
      }
    }
 
 
-   post {
-     always {
-       set_up()
-     }
-   }
 }
