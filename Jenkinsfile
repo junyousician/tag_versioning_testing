@@ -21,8 +21,13 @@ pipeline {
        steps {
          script {
             sh 'echo bababababbaa > tmp'
-            def port = readFile "tmp"
-            currentBuild.description = "${port}"
+            def port = readFile "tmp1"
+            if (port?.trim()) {
+              currentBuild.description = "${port}"
+            } else {
+              currentBuild.description = "no data"
+            }
+
           }
         }
      }
