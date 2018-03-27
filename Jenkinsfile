@@ -30,7 +30,7 @@ pipeline {
 
    post {
      always {
-       setup()
+       set_up()
      }
    }
 }
