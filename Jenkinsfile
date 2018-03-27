@@ -27,11 +27,11 @@ pipeline {
 
    post {
      always {
-       steps {
+
          script {
             currentBuild.description = "bbb"
           }
-       }
+       
      }
    }
 }
