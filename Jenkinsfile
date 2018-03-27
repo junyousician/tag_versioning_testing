@@ -1,3 +1,6 @@
+def set_up(){
+  currentBuild.description = "bbb"
+}
 pipeline {
     agent {
         node {
@@ -27,11 +30,7 @@ pipeline {
 
    post {
      always {
-
-         script {
-            currentBuild.description = "bbb"
-          }
-       
+       setup()
      }
    }
 }
