@@ -1,0 +1,3 @@
+ok /ERROR: action .* is not up-to-date/
+error /ERROR: /
+error /Error: /

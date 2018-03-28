@@ -20,6 +20,7 @@ pipeline {
      stage('stage2') {
        steps {
          script {
+            echo "Error: this is an error223333"
             sh 'echo bababababbaa > tmp'
             try {
                 def port = readFile "tmp1"
@@ -33,5 +34,9 @@ pipeline {
      }
    }
 
+   post {
+        always {
+            step([$class: 'LogParserPublisher', failBuildOnError: true, projectRulePath: 'jenkins_pipeline_logparser_rules.txt', showGraphs: true, useProjectRule: true])
+        }
 
 }
