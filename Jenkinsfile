@@ -20,7 +20,7 @@ pipeline {
      stage('stage2') {
        steps {
          script {
-            echo "Error: this is an error223333"
+            echo "OK: this is an error223333"
             sh 'echo bababababbaa > tmp'
             try {
                 def port = readFile "tmp1"
