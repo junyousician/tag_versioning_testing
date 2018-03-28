@@ -38,5 +38,6 @@ pipeline {
         always {
             step([$class: 'LogParserPublisher', failBuildOnError: true, projectRulePath: 'jenkins_pipeline_logparser_rules.txt', showGraphs: true, useProjectRule: true])
         }
+  }
 
 }
