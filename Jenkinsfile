@@ -12,7 +12,8 @@ pipeline {
        steps {
          script {
            sh 'printenv'
-           sh 'path=`pwd` && pr_id=`echo $path | cut -d "-" -f2` && echo $pr_id'
+           sh 'python test.py'
+           // sh 'path=`pwd` && pr_id=`echo $path | cut -d "-" -f2` && echo $pr_id'
          }
        }
      }
