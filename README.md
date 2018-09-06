@@ -1,5 +1,5 @@
 # tag_versioning_testing
-Total coverage: <a href="https://s3-eu-west-1.amazonaws.com/yousician-office/backend/master/coverage_summary/summary/index.html" target="_blank"><img align="right" src="https://s3-eu-west-1.amazonaws.com/yousician-office/backend/master/coverage_summary/master.svg?"></a>
+* [server](apps/yap/website/server/) <a href="https://s3-eu-west-1.amazonaws.com/yousician-office/backend/master/coverage_summary/summary/index.html" target="_blank"><img align="right" src="https://s3-eu-west-1.amazonaws.com/yousician-office/backend/master/coverage_summary/master.svg?"></a>
 
 ## test1
 <img align="right" src="https://s3-eu-west-1.amazonaws.com/yousician-office/backend/master/coverage/packages/test.svg">
