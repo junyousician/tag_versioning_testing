@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'aws-linux-backend' }
+    agent none
     stages {
         stage('Back-end') {
             agent {
